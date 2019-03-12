@@ -1,0 +1,85 @@
+{
+  "v1": {
+    "config": null,
+    "releaseName": "ship",
+    "upstream": "https://cloud.weave.works/k8s/scope.yaml?k8s-version=Q2xpZW50IFZlcnNpb246IHZlcnNpb24uSW5mb3tNYWpvcjoiMSIsIE1pbm9yOiIxMiIsIEdpdFZlcnNpb246InYxLjEyLjIiLCBHaXRDb21taXQ6IjE3Yzc3Yzc4OTgyMTgwNzNmMTRjOGQ1NzM1ODJlOGQyMzEzZGM3NDAiLCBHaXRUcmVlU3RhdGU6ImNsZWFuIiwgQnVpbGREYXRlOiIyMDE4LTEwLTMwVDIxOjM5OjE2WiIsIEdvVmVyc2lvbjoiZ28xLjExLjEiLCBDb21waWxlcjoiZ2MiLCBQbGF0Zm9ybToiZGFyd2luL2FtZDY0In0KU2VydmVyIFZlcnNpb246IHZlcnNpb24uSW5mb3tNYWpvcjoiMSIsIE1pbm9yOiIxMCIsIEdpdFZlcnNpb246InYxLjEwLjEyIiwgR2l0Q29tbWl0OiJjNzU3YjkzY2YwMzRkNDlhZjNhM2I4ZWNlZTNiOTYzOWE3YTExZGY3IiwgR2l0VHJlZVN0YXRlOiJjbGVhbiIsIEJ1aWxkRGF0ZToiMjAxOC0xMi0xOVQxMTowNDoyOVoiLCBHb1ZlcnNpb246ImdvMS45LjMiLCBDb21waWxlcjoiZ2MiLCBQbGF0Zm9ybToibGludXgvYW1kNjQifQo=",
+    "metadata": {
+      "applicationType": "",
+      "releaseNotes": "",
+      "version": "",
+      "lists": [
+        {
+          "apiVersion": "v1",
+          "path": "base/scope.yaml",
+          "items": [
+            {
+              "kind": "Namespace",
+              "metadata": {
+                "name": "weave",
+                "namespace": ""
+              }
+            },
+            {
+              "kind": "ServiceAccount",
+              "metadata": {
+                "name": "weave-scope",
+                "namespace": "weave"
+              }
+            },
+            {
+              "kind": "ClusterRole",
+              "metadata": {
+                "name": "weave-scope",
+                "namespace": ""
+              }
+            },
+            {
+              "kind": "ClusterRoleBinding",
+              "metadata": {
+                "name": "weave-scope",
+                "namespace": ""
+              }
+            },
+            {
+              "kind": "Deployment",
+              "metadata": {
+                "name": "weave-scope-app",
+                "namespace": "weave"
+              }
+            },
+            {
+              "kind": "Service",
+              "metadata": {
+                "name": "weave-scope-app",
+                "namespace": "weave"
+              }
+            },
+            {
+              "kind": "Deployment",
+              "metadata": {
+                "name": "weave-scope-cluster-agent",
+                "namespace": "weave"
+              }
+            },
+            {
+              "kind": "DaemonSet",
+              "metadata": {
+                "name": "weave-scope-agent",
+                "namespace": "weave"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "contentSHA": "d30a84d9d218f5db79be6eaa2f5023defe2036653f26573dd835ea8b39a2b8b6",
+    "lifecycle": {
+      "stepsCompleted": {
+        "kustomize": true,
+        "kustomize-intro": true,
+        "outro": true,
+        "render": true
+      }
+    }
+  }
+}

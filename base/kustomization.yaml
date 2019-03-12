@@ -1,0 +1,11 @@
+kind: ""
+apiversion: ""
+resources:
+- ClusterRole-weave-scope.yaml
+- ClusterRoleBinding-weave-scope.yaml
+- DaemonSet-weave-scope-agent-weave.yaml
+- Deployment-weave-scope-app-weave.yaml
+- Deployment-weave-scope-cluster-agent-weave.yaml
+- Namespace-weave.yaml
+- Service-weave-scope-app-weave.yaml
+- ServiceAccount-weave-scope-weave.yaml
